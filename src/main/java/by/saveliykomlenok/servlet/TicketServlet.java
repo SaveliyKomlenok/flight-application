@@ -1,6 +1,6 @@
 package by.saveliykomlenok.servlet;
 
-import by.saveliykomlenok.service.FlightService;
+import by.saveliykomlenok.service.TicketService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,24 +10,24 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-@WebServlet("/flights")
-public class FlightServlet extends HttpServlet {
-    private final FlightService flightService = FlightService.getINSTANCE();
+@WebServlet("/tickets")
+public class TicketServlet extends HttpServlet {
+    private final TicketService ticketService = TicketService.getINSTANCE();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
 
+        Long flightId = Long.valueOf(req.getParameter("flightId"));
+
         try (var writer = resp.getWriter()) {
-            writer.write("<h1>Список перелетов: </h1>");
+            writer.write("<h1>Купленные билеты: </h1>");
             writer.write("<ul>");
-            flightService.findAll().forEach(flightDto ->
+            ticketService.findAllByFlightId(flightId).forEach(ticketDto ->
                     writer.write("""
-                            <li>
-                                <a href='/tickets?flightId=%d'>%s</a>
-                            </li>
-                            """.formatted(flightDto.id(), flightDto.description())));
+                            <li>%s</li>
+                            """.formatted(ticketDto.seatNo())));
             writer.write("</ul>");
         }
     }

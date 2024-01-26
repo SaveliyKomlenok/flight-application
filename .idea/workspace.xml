@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Added flightDao">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216/storage_v2/_src_/database/flight_db.rVZkTg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216/storage_v2/_src_/database/flight_db.rVZkTg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/utils/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/utils/ConnectionManager.java" afterDir="false" />
+    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Added MVC development architecture for entity flight">
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dto/FlightDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dto/FlightDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/FlightServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +184,7 @@
       <workItem from="1706187936579" duration="12700000" />
       <workItem from="1706208895928" duration="10547000" />
       <workItem from="1706265732819" duration="3271000" />
+      <workItem from="1706283453829" duration="1908000" />
     </task>
     <task id="LOCAL-00001" summary="Added connection pool">
       <created>1706192650998</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706219418202</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added MVC development architecture for entity flight">
+      <created>1706284025136</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706284025136</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +235,7 @@
     <MESSAGE value="Added connection pool" />
     <MESSAGE value="Added ticketDao" />
     <MESSAGE value="Added flightDao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added flightDao" />
+    <MESSAGE value="Added MVC development architecture for entity flight" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MVC development architecture for entity flight" />
   </component>
 </project>
