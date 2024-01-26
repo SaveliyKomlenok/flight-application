@@ -9,8 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Added MVC development architecture for entity ticket">
+    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Added cookie, session and dispatcher servlets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/FlightServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/FlightServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/TicketServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +190,7 @@
       <workItem from="1706208895928" duration="10547000" />
       <workItem from="1706265732819" duration="3271000" />
       <workItem from="1706283453829" duration="2005000" />
-      <workItem from="1706296547535" duration="3197000" />
+      <workItem from="1706296547535" duration="5464000" />
     </task>
     <task id="LOCAL-00001" summary="Added connection pool">
       <created>1706192650998</created>
@@ -224,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706285681067</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added cookie, session and dispatcher servlets">
+      <created>1706299935740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706299935740</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +257,18 @@
     <MESSAGE value="Added flightDao" />
     <MESSAGE value="Added MVC development architecture for entity flight" />
     <MESSAGE value="Added MVC development architecture for entity ticket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MVC development architecture for entity ticket" />
+    <MESSAGE value="Added cookie, session and dispatcher servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cookie, session and dispatcher servlets" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/TicketServlet.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

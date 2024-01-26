@@ -1,6 +1,7 @@
 package by.saveliykomlenok.servlet;
 
 import by.saveliykomlenok.service.TicketService;
+import by.saveliykomlenok.utils.JspHelper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -21,14 +22,7 @@ public class TicketServlet extends HttpServlet {
 
         Long flightId = Long.valueOf(req.getParameter("flightId"));
 
-        try (var writer = resp.getWriter()) {
-            writer.write("<h1>Купленные билеты: </h1>");
-            writer.write("<ul>");
-            ticketService.findAllByFlightId(flightId).forEach(ticketDto ->
-                    writer.write("""
-                            <li>%s</li>
-                            """.formatted(ticketDto.seatNo())));
-            writer.write("</ul>");
-        }
+        req.setAttribute("tickets", ticketService.findAllByFlightId(flightId));
+        req.getRequestDispatcher(JspHelper.getPath("tickets")).forward(req, resp);
     }
 }
