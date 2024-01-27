@@ -2,10 +2,13 @@ package by.saveliykomlenok.service;
 
 import by.saveliykomlenok.dao.FlightDao;
 import by.saveliykomlenok.dto.FlightDto;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FlightService {
     private static final FlightService INSTANCE = new FlightService();
     private final FlightDao flightDao = FlightDao.getInstance();
@@ -21,9 +24,5 @@ public class FlightService {
 
     public static FlightService getINSTANCE() {
         return INSTANCE;
-    }
-
-    private FlightService(){
-
     }
 }

@@ -1,5 +1,8 @@
 package by.saveliykomlenok.utils;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import java.lang.reflect.Proxy;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +10,7 @@ import java.sql.SQLException;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class ConnectionManager {
     private static final String URL_KEY = "db.url";
     private static final String USERNAME_KEY = "db.username";
@@ -60,8 +64,5 @@ public final class ConnectionManager {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private ConnectionManager() {
     }
 }

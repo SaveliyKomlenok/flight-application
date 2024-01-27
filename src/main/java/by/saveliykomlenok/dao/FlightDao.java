@@ -4,12 +4,15 @@ import by.saveliykomlenok.entity.Flight;
 import by.saveliykomlenok.entity.FlightStatus;
 import by.saveliykomlenok.exception.DaoException;
 import by.saveliykomlenok.utils.ConnectionManager;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FlightDao implements Dao<Flight, Long> {
     private final static FlightDao INSTANCE = new FlightDao();
 
@@ -144,9 +147,5 @@ public class FlightDao implements Dao<Flight, Long> {
 
     public static FlightDao getInstance() {
         return INSTANCE;
-    }
-
-    private FlightDao() {
-
     }
 }

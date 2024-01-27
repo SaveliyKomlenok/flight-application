@@ -4,6 +4,8 @@ import by.saveliykomlenok.dto.TicketFilter;
 import by.saveliykomlenok.entity.Ticket;
 import by.saveliykomlenok.exception.DaoException;
 import by.saveliykomlenok.utils.ConnectionManager;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TicketDao implements Dao<Ticket, Long>{
     private final static TicketDao INSTANCE = new TicketDao();
 
@@ -197,9 +200,5 @@ public class TicketDao implements Dao<Ticket, Long>{
 
     public static TicketDao getInstance() {
         return INSTANCE;
-    }
-
-    private TicketDao() {
-
     }
 }
