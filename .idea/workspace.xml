@@ -9,15 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Modified servlets using jsp">
+    <list default="true" id="d71f5094-8d5a-44f4-b985-5dc7bd1ad8ff" name="Changes" comment="Added registration with validation">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216/storage_v2/_src_/database/flight_db.rVZkTg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5fa8a26b-8323-4b99-9adc-b98e86759216/storage_v2/_src_/database/flight_db.rVZkTg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/FlightDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/TicketDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/utils/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/utils/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/saveliykomlenok/servlet/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/flights.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/flights.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tickets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/tickets.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -195,7 +197,8 @@
       <workItem from="1706265732819" duration="3271000" />
       <workItem from="1706283453829" duration="2005000" />
       <workItem from="1706296547535" duration="5741000" />
-      <workItem from="1706387566152" duration="6642000" />
+      <workItem from="1706387566152" duration="6876000" />
+      <workItem from="1706430996273" duration="6326000" />
     </task>
     <task id="LOCAL-00001" summary="Added connection pool">
       <created>1706192650998</created>
@@ -246,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706302288269</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added registration with validation">
+      <created>1706394830251</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706394830251</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +281,7 @@
     <MESSAGE value="Added MVC development architecture for entity ticket" />
     <MESSAGE value="Added cookie, session and dispatcher servlets" />
     <MESSAGE value="Modified servlets using jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified servlets using jsp" />
+    <MESSAGE value="Added registration with validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added registration with validation" />
   </component>
 </project>

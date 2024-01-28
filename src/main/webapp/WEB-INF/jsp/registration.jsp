@@ -1,13 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<form action="/registration" method="post">
+<form action="${pageContext.request.contextPath}/registration" method="post">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name"/><br>
 
@@ -20,9 +19,9 @@
     <label for="pwd">Password:</label>
     <input type="password" name="pwd" id="pwd"/><br>
 
-    <select>
+    <select name="role">
         <c:forEach var="role" items="${requestScope.roles}">
-            <option label="${role}">${role}</option>
+            <option value="${role}">${role}</option>
         </c:forEach>
     </select><br>
 
